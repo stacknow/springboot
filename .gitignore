@@ -1,9 +1,15 @@
-HELP.md
-target/
+# Ignore target directory
+target/*
+
+# Allow the specific JAR file to be included
+!target/demo-0.0.1-SNAPSHOT.jar
+
+# Exclude other unnecessary files and directories
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Exclude IDE and build-specific files
 ### STS ###
 .apt_generated
 .classpath
